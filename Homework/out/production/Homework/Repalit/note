@@ -1,0 +1,247 @@
+35:
+[11:13 AM]
+import java.util.Scanner;
+class Main {
+ public static void main(String [] args){
+
+   Scanner scanner=new Scanner(System.in);
+   System.out.println("Do you need a loan?");
+   Boolean loan=scanner.nextBoolean();
+   if(loan){
+     System.out.println("What is your credit score?");
+   Double score=scanner.nextDouble();
+     String result=null;
+
+     if (score<600) {
+       result="Not eligible";
+     } else if (score>=600 && score<=700){
+       result="Maybe eligible";
+     } else if (score>=701 && score<=800){
+       result="Eligible";
+     } else if (score>800){
+       result="Definitely eligible";
+     }
+     System.out.println("The eligibility is "+result);
+
+   } else {
+     System.out.println("Unknown");
+   }
+   scanner.close();
+ }
+}
+[11:14 AM]
+36:
+[11:14 AM]
+import java.util.Scanner;
+class Main {
+ public static void main (String[] args) {
+
+  Scanner scanner=new Scanner(System.in);
+  System.out.println("Please enter two strings");
+  String word1=scanner.next();
+  String word2=scanner.next();
+  System.out.println("Please enter two numbers");
+  int int1=scanner.nextInt();
+  int int2=scanner.nextInt();
+  String result=null;
+
+  if ((int1==int2) && (word1.equals(word2))) {
+  result="AND";
+  }
+    else if (int1==int2 || word1.equals(word2)) {
+    result="OR";
+  } else if ((int1!=int2) && (!word1.equals(word2))){
+    result="NONE";
+  }
+  System.out.println("Your result is "+result);
+  scanner.close();
+}
+}
+[11:14 AM]
+37:
+[11:14 AM]
+import java.util.Scanner;
+class Main {
+ public static void main (String[]args){
+ Scanner scanner=new Scanner(System.in);
+
+   System.out.println("Are you thirsty");
+   Boolean thirsty=scanner.nextBoolean();
+   System.out.println("Are you sleepy");
+   Boolean sleepy=scanner.nextBoolean();
+   String result;
+
+   if (thirsty && !sleepy){
+     result="water";
+   } else if (thirsty && sleepy){
+      result="coffee";
+   } else if (!thirsty && sleepy){
+       result="tea";
+   } else{
+     result="nothing";
+   }
+ System.out.println("Looks like you need to drink "+result);
+   scanner.close();
+ }
+}
+[11:15 AM]
+38:
+[11:15 AM]
+import java.util.Scanner;
+class Main {
+ public static void main (String[] args){
+ Scanner scanner=new Scanner(System.in);
+   System.out.println("Is it weekend?");
+   boolean day=scanner.nextBoolean();
+   String result=null;
+
+   if(!day){
+     result="manual testing ";
+   } else {
+     result="Java";
+   }
+   System.out.println("Today you will be learning "+ result);
+
+   scanner.close();
+ }
+
+}
+[11:15 AM]
+39:
+[11:15 AM]
+import java.util.Scanner;
+class Main {
+public static void main (String[] args){
+
+Scanner scanner=new Scanner(System.in);
+  System.out.println("Your grade is ");
+  double mark=scanner.nextDouble();
+  char grade=0;
+
+  if(mark>=1 && mark<25){
+     grade='F';
+     System.out.println("Your grade is "+grade);
+  } else if (mark>=25 && mark<45){
+     grade='E';
+     System.out.println("Your grade is "+grade);
+  } else if (mark>=45 && mark<50){
+     grade='D';
+     System.out.println("Your grade is "+grade);
+  } else if (mark>=50 && mark<60){
+     grade='C';
+     System.out.println("Your grade is "+grade);
+  } else if (mark>=60 && mark<80){
+     grade='B';
+     System.out.println("Your grade is "+grade);
+  } else if (mark>=80){
+     grade='A';
+      System.out.println("Your grade is "+grade);
+  } else {
+      System.out.println("Please enter valid mark");
+  }
+
+
+}
+}
+[11:16 AM]
+49:
+[11:16 AM]
+class Main {
+public static void main (String[] args) {
+
+  for (int i=1; i<=3; i++){
+    System.out.println("Hello Syntax Team! How are you?");
+  }
+}
+
+}
+[11:17 AM]
+60:
+[11:17 AM]
+class Main {
+ public static void main (String[]args){
+   for (int a=10; a>=1; a--) {
+     System.out.println(a);
+   }
+    System.out.println("Happy New Year!");
+ }
+}
+[11:17 AM]
+62:
+[11:17 AM]
+class Main {
+ public static void main (String[] args){
+   for (int a=1; a<=10; a++){
+     if (a==5 || a==6){
+       continue;
+     } System.out.println(a);
+   }
+ }
+}
+[11:18 AM]
+63:
+[11:18 AM]
+import java.util.Scanner;
+
+class Main {
+ public static void main(String[] args) {
+   Scanner scanner=new Scanner(System.in);
+   System.out.println("Print one number");
+   int a=scanner.nextInt();
+
+   for (int x=0; x<a; x++){
+     System.out.print(x+" ");
+   }
+   scanner.close();
+    }
+}
+[11:18 AM]
+64:
+[11:19 AM]
+import java.util.Scanner;
+class Main{
+public static void main (String[] args){
+  Scanner scanner=new Scanner(System.in);
+  System.out.println("Print one number");
+  int end=scanner.nextInt();
+
+  for (int a=0; a<end*2; a++){
+    System.out.print(a+" ");
+  }
+  scanner.close();
+}
+}
+[11:19 AM]
+65:
+[11:19 AM]
+import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+ Scanner scanner=new Scanner(System.in);
+    System.out.println("Print one number");
+    int x=scanner.nextInt();
+    for (int a=x; a>=0; a--){
+     if (a==x){
+       continue;
+     } System.out.print(a+" ");
+    }
+    }
+}
+[11:19 AM]
+67:
+[11:19 AM]
+class Main {
+  public static void main (String[]args){
+
+    for (int a=1; a<=5; a++){
+     int c=0;
+      for (int b=1; b<=10; b++){
+       int x=c+=a;
+        System.out.print(x+" ");
+      }System.out.println();
+    }
+   }
+  }
+
+Message @Liliia Khusainova_Lithia (Tampa)
